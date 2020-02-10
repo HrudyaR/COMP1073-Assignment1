@@ -1,0 +1,115 @@
+@charset "utf-8";
+/* Assignment 1 | COMP1073 Client-Side JavaScript */
+
+html, body, .container {
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+body {
+    position: relative;
+}
+
+.btn {
+    font-weight: bold;
+    font-size: 20px;
+    transition: all ease 0.3s;
+}
+
+.btn:hover {
+    font-size: 25px;
+    box-shadow: 0px 0px 14px 0px rgba(6, 41, 38, 0.9);
+}
+
+.btn:disabled {
+    pointer-events: none;
+    opacity: 0.3;
+}
+
+img {
+    max-width: 38px;
+}
+
+.btn-number {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.game-content {
+    position: relative;
+}
+
+.list-box {
+    text-align: center;
+    position: relative;
+}
+
+.list-box ul {
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
+    border: 1px solid #b10000;
+    border-bottom: 0;
+}
+
+.list-box ul li {
+    text-align: center;
+    border-bottom: 1px solid #b10000;
+    list-style-type: none;
+    height: 85px;
+    line-height: 32px;
+    transition: all ease 0.3s;
+    color: white;
+}
+
+.list-box ul li.active {
+    background: rgba(255, 76, 76, 0.5);
+    box-shadow: 0px 0px 14px 0px rgba(6, 41, 38, 0.9);
+}
+
+.list-box ul li img {
+    display: block;
+    margin: 0 auto;
+}
+
+.btn-box {
+    position: absolute;
+    top: 50%;;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn-box .btn {
+    margin-bottom: 10px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    font-size: 30px;
+}
+
+.left-title, .right-title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 10%;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    text-align: center;
+    line-height: 115px;
+    font-size: 25px;
+    font-weight: bold;
+    background: #3e8e2f;
+    color: wheat;
+}
+
+.left-title {
+    left: 0;
+}
+
+.right-title {
+    right: 0;
+}
